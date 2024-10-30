@@ -7,7 +7,7 @@ data "aws_ami" "amazon-linux" {
   owners      = ["amazon"]
   filter {
     name   = "name"
-    values = ["amzn-ami-*-x86_64-gp2"]
+    values = ["al2023-ami-2023.*-kernel-*"]
   }
   filter {
     name   = "virtualization-type"
